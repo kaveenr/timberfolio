@@ -1,0 +1,35 @@
+{
+  "name": "timberfolio",
+  "version": "1.0.0",
+  "description": "Gallery Portfolio in Timber",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timber/starter-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "depressed",
+    "timber"
+  ],
+  "author": "Kaveen Rodrigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timber/starter-theme/issues"
+  },
+  "homepage": "https://github.com/timber/starter-theme#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1"
+  },
+  "dependencies": {}
+}

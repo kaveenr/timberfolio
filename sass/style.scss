@@ -1,0 +1,120 @@
+/*
+ * Theme Name: timberfolio
+ * Description: no bullshit portfolio manager made with TImber
+ * Author: Kaveen Rodrigo
+*/
+
+@import 'bootstrap-reboot';
+@import 'bootstrap-grid';
+@import "carousel";
+@import 'nav';
+@import 'type';
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+$txt : #111;
+
+.html,body {
+    height: 100%;
+    font-family: 'Alegreya', serif;    
+}
+
+.site-container {
+    padding-right: 100px;
+    padding-top:60px;
+    float: right;
+    width: 90vw;
+    height: 80vh;
+}
+
+.nav-side {
+    //border-right: 2px solid $txt;
+}
+
+.full-row {
+    height: 100%;
+}
+
+.gallery {
+    display: none;
+    width :100%;
+    height: 100%;
+    img {
+        height:  100%;
+        display: block;
+        margin: auto;
+    }
+    .counter {
+        text-align: center;
+        font-weight: bold;
+        margin-top : 10px;
+    }
+    .carousel-control-prev-text {
+        color: $txt;
+        position: relative;
+        left: -40px;
+    }
+    .carousel-control-next-text {
+        color: $txt;
+        position: relative;
+        right: -40px;
+    }
+
+}
+
+.carousel-fade {
+    .carousel-item {
+      opacity: 0;
+      transition-duration: .6s;
+      transition-property: opacity;
+    }
+  
+    .carousel-item.active,
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-prev.carousel-item-right {
+      opacity: 1;
+    }
+  
+    .active.carousel-item-left,
+    .active.carousel-item-right {
+      opacity: 0;
+    }
+  
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active,
+    .active.carousel-item-left,
+    .active.carousel-item-prev {
+      transform: translateX(0);
+  
+      @supports (transform-style: preserve-3d) {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.hdr-logo-link {
+    color: $txt;
+    ::hover {
+        text-decoration: none;
+    }
+}
+
+.main-nav {
+    a {
+        color: $txt;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
