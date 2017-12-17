@@ -1497,11 +1497,10 @@ mark,
   font-family: 'Alegreya', serif; }
 
 .site-container {
-  padding-right: 100px;
   padding-top: 60px;
-  float: right;
+  margin: auto;
   width: 90vw;
-  height: 80vh; }
+  height: 90vh; }
 
 .full-row {
   height: 100%; }
